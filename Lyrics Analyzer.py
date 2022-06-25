@@ -1,3 +1,5 @@
+import random
+
 text = """If you wanna run away with me, I know a galaxy
 And I can take you for a ride
 I had a premonition that we fell into a rhythm
@@ -83,6 +85,7 @@ I'm levitating (Woo)"""
 print(text)
 print(len(text))
 print(text.split())
+words = text.split()
 print(len(text.split()))
 
 word_count = {}
@@ -94,3 +97,6 @@ for word in text.lower().split():
         word_count[word] = 1
 
 print(word_count)
+
+print("The random word from the list is: ",random.choice(words))
+
